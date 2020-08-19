@@ -1,17 +1,16 @@
 import React from 'react';
-// import logo from './logo.svg';
-import './App.css';
 import Button from './components/Button';
 
 function App() {
-  const a = '123';
-  if (a === '123') {
-    console.log('hhh');
 
-  }
   return (
     <div className="App">
       <header className="App-header">
+        <p>eidt <code>src/app.tsx</code>and to reload</p>
+        <a href="#" className='App-link' target='_blank'></a>
+        learn react
+        <h1>h1h1h1h1h</h1>
+        <h2>h2h2h2h2</h2>
         <Button></Button>
       </header>
     </div>
