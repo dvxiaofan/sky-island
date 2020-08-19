@@ -1,17 +1,17 @@
 import React from 'react';
-import Button from './components/Button';
+import Button, { ButtonType, ButtonSize } from './components/Button/Button';
 
 function App() {
 
   return (
     <div className="App">
       <header className="App-header">
-        <p>eidt <code>src/app.tsx</code>and to reload</p>
-        <a href="#" className='App-link' target='_blank'></a>
-        learn react
-        <h1>h1h1h1h1h</h1>
-        <h2>h2h2h2h2</h2>
-        <Button></Button>
+
+        <Button disabled >hello</Button>
+        <Button btnType={ButtonType.Primary} >primary</Button>
+        <Button btnType={ButtonType.Danger} size={ButtonSize.Large}>danger</Button>
+
+        <Button btnType={ButtonType.Link} disabled href='bing.cn' size={ButtonSize.Small}>link</Button>
       </header>
     </div>
   );
