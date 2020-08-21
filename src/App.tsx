@@ -8,10 +8,12 @@ function App() {
       <header className="App-header">
 
         <Button disabled >hello</Button>
-        <Button btnType={ButtonType.Primary} >primary</Button>
-        <Button btnType={ButtonType.Danger} size={ButtonSize.Large}>danger</Button>
+        <Button btnType={ButtonType.Default} disabled size={ButtonSize.Small}>Default</Button>
+        <Button btnType={ButtonType.Primary} >Primary</Button>
+        <Button btnType={ButtonType.Danger} size={ButtonSize.Large}>Danger</Button>
 
-        <Button btnType={ButtonType.Link} disabled href='bing.cn' size={ButtonSize.Small}>link</Button>
+        <Button btnType={ButtonType.Link} href='bing.cn' size={ButtonSize.Small}>Link 01</Button>
+        <Button btnType={ButtonType.Link} disabled href='bing.cn' size={ButtonSize.Small}>Disabled Link</Button>
       </header>
     </div>
   );
