@@ -7,6 +7,8 @@ function App() {
     <div className="App">
       <header className="App-header">
 
+        <Button autoFocus className='custom'>onFocus</Button>
+        <Button onClick={(e) => { e.preventDefault(); console.log('hello') }}>ON Click</Button>
         <Button disabled >hello</Button>
         <Button btnType={ButtonType.Default} disabled size={ButtonSize.Small}>Default</Button>
         <Button btnType={ButtonType.Primary} >Primary</Button>
