@@ -1,5 +1,6 @@
 import React from 'react';
-import Button, { ButtonType, ButtonSize } from './components/Button/Button';
+// import Button, { ButtonType, ButtonSize } from './components/Button/Button';
+import Alert, { AlertType } from './components/Alert/Alert';
 
 function App() {
 
@@ -7,16 +8,12 @@ function App() {
     <div className="App">
       <header className="App-header">
 
-        <Button autoFocus className='custom'>onFocus</Button>
-        <Button onClick={(e) => { e.preventDefault(); console.log('hello') }}>ON Click</Button>
-        <Button disabled >hello</Button>
-        <Button btnType={ButtonType.Default} disabled size={ButtonSize.Small}>Default</Button>
-        <Button btnType={ButtonType.Primary} >Primary</Button>
-        <Button btnType={ButtonType.Danger} size={ButtonSize.Large}>Danger</Button>
+        <Alert alertType={AlertType.Default} title='提示标题'>this is alert!</Alert>
 
-        <Button btnType={ButtonType.Link} href='bing.cn' size={ButtonSize.Small}>Link 01</Button>
-        <Button btnType={ButtonType.Link} disabled href='bing.cn' size={ButtonSize.Small}>Disabled Link</Button>
+
       </header>
+
+
     </div>
   );
 }
